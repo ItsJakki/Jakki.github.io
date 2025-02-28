@@ -1,0 +1,30 @@
+body {
+    background: url('backgrndpic.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20vh;
+}
+
+.links a {
+    display: block;
+    margin: 15px;
+    font-size: 24px;
+    color: #a855f7; /* Purple color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #7e22ce; /* Darker purple on hover */
+}
