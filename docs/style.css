@@ -10,19 +10,24 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
 }
 
 .container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 90%; 
+}
+
+.left-panel {
+    width: 60%; /* Left panel takes up 60% of container */
     background: rgba(0, 0, 0, 0.7);
-    padding: 50px;
+    padding: 20px;
     border-radius: 10px;
     border: 4px solid #a855f7;
     box-shadow: 0 0 10px #7e22ce;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
 }
 
 h1 {
@@ -76,7 +81,7 @@ h1 {
 
 
 .right-panel {
-    width: 40%; 
+    width: 35%;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
