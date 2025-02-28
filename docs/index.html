@@ -44,6 +44,7 @@
     </div>
     
 <div id="player"></div>
+<button onclick="unmuteAudio()">🔊 Unmute</button>
 
 <script>
     var player;
@@ -66,9 +67,17 @@
             }
         });
     }
+
+    function unmuteAudio() {
+        if (player) {
+            player.unMute();
+            player.setVolume(100); 
+        }
+    }
 </script>
 
 <script src="https://www.youtube.com/iframe_api"></script>
+
 
 
 </body>
