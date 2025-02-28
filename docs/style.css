@@ -21,16 +21,15 @@ body {
     text-align: center;
 }
 
-.left-panel, .wallet-panel {
-    width: 30%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    border: 4px solid #a855f7;
-    box-shadow: 0 0 10px #7e22ce;
+.center-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -100px;
 }
 
-.wallet-panel h1 {
+.center-panel h1 {
     font-size: 24px;
     color: #a855f7;
     text-shadow: 2px 2px #7e22ce;
@@ -38,47 +37,6 @@ body {
 
 #pi-wallet {
     font-size: 18px;
-    color: #7e22ce;
-}
-
-.right-panel {
-    position: fixed;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 200px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    border: 2px solid #a855f7;
-    box-shadow: 0 0 10px #7e22ce;
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-}
-
-.right-panel h3 {
-    font-size: 16px;
-    color: #a855f7;
-    margin-bottom: 10px;
-}
-
-.video-links {
-    list-style-type: none;
-    padding: 0;
-}
-
-.video-links li {
-    margin: 10px 0;
-}
-
-.video-links a {
-    text-decoration: none;
-    color: #a855f7;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.video-links a:hover {
     color: #7e22ce;
 }
 
@@ -126,4 +84,68 @@ body {
 .sidebar p {
     font-size: 12px;
     color: white;
+}
+
+.right-panel {
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 10px #7e22ce;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.right-panel h3 {
+    font-size: 16px;
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.video-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.video-links li {
+    margin: 10px 0;
+}
+
+.video-links a {
+    text-decoration: none;
+    color: #a855f7;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.video-links a:hover {
+    color: #7e22ce;
+}
+
+.pi-wallet {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid #a855f7;
+    box-shadow: 0 0 10px #7e22ce;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.pi-wallet p {
+    font-size: 18px;
+    color: #a855f7;
+    text-shadow: 2px 2px #7e22ce;
+}
+
+.pi-wallet #pi-wallet {
+    font-size: 16px;
+    color: #7e22ce;
 }
