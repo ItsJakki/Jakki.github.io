@@ -124,7 +124,7 @@ body {
 }
 
 .video-links a:hover {
-    color: #7e22ce;
+    color: white;
 }
 
 .pi-wallet {
@@ -151,5 +151,5 @@ body {
 
 .pi-wallet #pi-wallet {
     font-size: 16px;
-    color: #7e22ce;
+    color: white;
 }
