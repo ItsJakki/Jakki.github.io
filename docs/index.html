@@ -44,39 +44,40 @@
     </div>
     
 <div id="player"></div>
-<button onclick="unmuteAudio()">🔊 Unmute</button>
+    <button id="unmute-btn" onclick="unmuteAudio()">🔊 Unmute</button>
 
-<script>
-    var player;
+    <script>
+        var player;
 
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            height: '0',
-            width: '0',
-            videoId: 'KBKlDrGu1lo',
-            playerVars: {
-                autoplay: 1,
-                loop: 1,
-                playlist: 'KBKlDrGu1lo',
-                mute: 1 
-            },
-            events: {
-                'onReady': function (event) {
-                    event.target.playVideo();
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: 'KBKlDrGu1lo', 
+                playerVars: {
+                    autoplay: 1,
+                    loop: 1,
+                    playlist: 'KBKlDrGu1lo',
+                    mute: 1 
+                },
+                events: {
+                    'onReady': function (event) {
+                        event.target.playVideo();
+                    }
                 }
-            }
-        });
-    }
-
-    function unmuteAudio() {
-        if (player) {
-            player.unMute();
-            player.setVolume(100); 
+            });
         }
-    }
-</script>
 
-<script src="https://www.youtube.com/iframe_api"></script>
+        function unmuteAudio() {
+            if (player) {
+                player.unMute();
+                player.setVolume(60);
+                document.getElementById("unmute-btn").style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
 
 
 
