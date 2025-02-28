@@ -143,6 +143,10 @@ body {
     font-size: 18px;
     color: #a855f7;
     text-shadow: 2px 2px #7e22ce;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 14px;
+    overflow: hidden;
 }
 
 .pi-wallet #pi-wallet {
