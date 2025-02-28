@@ -42,13 +42,23 @@
         <p>Crypto Pi Wallet Address</p>
         <p id="pi-wallet">GCCMMFL5V4HWGES7AIPPUDVCWG4OZWJZURS3CS2PY3LGVR3RCBH6DXYZ</p>
     </div>
+    
 <div id="player"></div>
+
 <script>
+    var player;
+
     function onYouTubeIframeAPIReady() {
-        new YT.Player('player', {
+        player = new YT.Player('player', {
             height: '0',
             width: '0',
             videoId: 'KBKlDrGu1lo',
+            playerVars: {
+                autoplay: 1,
+                loop: 1,
+                playlist: 'KBKlDrGu1lo',
+                mute: 1 
+            },
             events: {
                 'onReady': function (event) {
                     event.target.playVideo();
@@ -57,6 +67,7 @@
         });
     }
 </script>
+
 <script src="https://www.youtube.com/iframe_api"></script>
 
 
