@@ -45,3 +45,28 @@ h1 {
     transform: scale(1.2);
     color: #7e22ce;
 }
+.sidebar {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 10px #7e22ce;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    color: #a855f7;
+}
+
+.sidebar p {
+    font-size: 12px;
+    color: white;
+}
+
