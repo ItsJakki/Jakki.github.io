@@ -14,16 +14,16 @@ body {
 }
 
 .container {
-    display: flex; /* Flexbox to arrange left and right panels side by side */
-    justify-content: space-between; /* Space out the panels */
-    gap: 20px; /* Space between the panels */
-    width: 80%; /* Container width to ensure it doesn’t take up the whole screen */
-    max-width: 1200px; /* Limit the maximum width of the container */
-    position: relative; /* Needed for positioning */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    width: 80%;
+    max-width: 1200px;
+    position: relative; 
 }
 
 .left-panel {
-    width: 60%; /* Left panel (connections) takes 60% of container */
+    width: 60%; 
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
@@ -82,10 +82,11 @@ h1 {
 
 
 .right-panel {
-    position: absolute; 
-    right: 0; 
-    top: 0; 
-    width: 35%;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
