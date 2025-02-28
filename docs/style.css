@@ -20,6 +20,9 @@ body {
     border-radius: 10px;
     border: 4px solid #a855f7;
     box-shadow: 0 0 10px #7e22ce;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
 }
 
 h1 {
@@ -45,6 +48,7 @@ h1 {
     transform: scale(1.2);
     color: #7e22ce;
 }
+
 .sidebar {
     position: fixed;
     left: 10px;
@@ -70,3 +74,40 @@ h1 {
     color: white;
 }
 
+
+.right-panel {
+    width: 40%; 
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 10px #7e22ce;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.right-panel h3 {
+    font-size: 16px;
+    color: #a855f7;
+    margin-bottom: 10px;
+}
+
+.video-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.video-links li {
+    margin: 10px 0;
+}
+
+.video-links a {
+    text-decoration: none;
+    color: #a855f7;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.video-links a:hover {
+    color: #7e22ce;
+}
